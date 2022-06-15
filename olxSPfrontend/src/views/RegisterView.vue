@@ -52,15 +52,20 @@ export default {
     }
   },
   methods: {
-    async handleSubmit(){
-      await axios.post('http://127.0.0.1:8000/api/register', {
-        name: this.username,
-        email: this.email,
-        password: this.password,
-        password_confirm: this.password_confirm
-      });
 
-      this.$router.push('/login');
+      async handleSubmit() {
+        try {
+          await axios.post('http://127.0.0.1:8000/api/register', {
+            name: this.username,
+            email: this.email,
+            password: this.password,
+            password_confirm: this.password_confirm
+          });
+          this.$router.push('/login');
+        } catch (e){
+          alert("Wprowadzono niepoprawne dane")
+      }
+
     }
   }
 }

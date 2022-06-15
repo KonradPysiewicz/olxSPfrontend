@@ -24,18 +24,18 @@
                 <option value="Dom i Ogród">Dom i Ogród</option>
                 <option value="Elektronika">Elektronika</option>
                 <option value="Moda">Moda</option>
-<!--                <option value="Rolnictwo">Rolnictwo</option>-->
-<!--                <option value="Zwierzęta">Zwierzęta</option>-->
-<!--                <option value="Dla Dzieci">Dla Dzieci</option>-->
-<!--                <option value="Sport i Hobby">Sport i Hobby</option>-->
-<!--                <option value="Muzyka i Edukacja">Muzyka i Edukacja</option>-->
-<!--                <option value="Usługi i Firmy">Usługi i Firmy</option>-->
-<!--                <option value="Ślub i Wesele">Ślub i Wesele</option>-->
-<!--                <option value="Oddam za darmo">Oddam za darmo</option>-->
-<!--                <option value="Zamienię">Zamienię</option>-->
-<!--                <option value="Praca w sprzedaży">Praca w sprzedaży</option>-->
-<!--                <option value="Wynajem budowa">Wynajem budowa</option>-->
-<!--                <option value="Piękny ogród">Piękny ogród</option>-->
+                <option value="Rolnictwo">Rolnictwo</option>
+                <option value="Zwierzęta">Zwierzęta</option>
+                <option value="Dla Dzieci">Dla Dzieci</option>
+                <option value="Sport i Hobby">Sport i Hobby</option>
+                <option value="Muzyka i Edukacja">Muzyka i Edukacja</option>
+                <option value="Usługi i Firmy">Usługi i Firmy</option>
+                <option value="Ślub i Wesele">Ślub i Wesele</option>
+                <option value="Oddam za darmo">Oddam za darmo</option>
+                <option value="Zamienię">Zamienię</option>
+                <option value="Praca w sprzedaży">Praca w sprzedaży</option>
+                <option value="Wynajem budowa">Wynajem budowa</option>
+                <option value="Piękny ogród">Piękny ogród</option>
               </select>
             </div>
 

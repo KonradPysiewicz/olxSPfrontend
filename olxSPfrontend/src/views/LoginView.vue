@@ -45,26 +45,6 @@ export default {
     const submit = (email, password) => store.dispatch("handleSubmit", {email: email, password: password});
     return {submit}
   },
-  // methods: {
-  //   async handleSubmit(){
-  //     const response = await axios.post('http://127.0.0.1:8000/api/login', {
-  //       email: this.email,
-  //       password: this.password
-  //     })
-  //     localStorage.setItem('token',response.data.token);
-  //     localStorage.setItem('id',response.data.tokeninfo.tokenable_id);
-  //     localStorage.setItem('user',JSON.stringify(response.data.user));
-  //     // window.location.reload();
-  //     this.$router.push('/');
-  //
-  //
-  //
-  //     // this.$router.push({
-  //     //   name: 'home',
-  //     // });
-  //     // window.location.reload();
-  //   }
-  // }
 }
 </script>
 

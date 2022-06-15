@@ -5,6 +5,7 @@ import LoginView from '../views/LoginView.vue'
 import AddPost from '../views/AddPost.vue'
 import MyOffers from "../views/MyOffers.vue";
 import EditPost from "../views/EditPost.vue";
+import ShowPost from "../views/ShowPost.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -41,6 +42,11 @@ const router = createRouter({
       path: '/my_offers',
       name: 'my_offers',
       component: MyOffers
+    },
+    {
+      path: '/show_post',
+      name: 'show_post',
+      component: ShowPost
     },
     {
       path: '/about',
