@@ -82,6 +82,7 @@ export default {
   name: "AddPost",
   data(){
     return{
+      userId: '',
       tytul: '',
       opis: '',
       cena: '',
@@ -91,8 +92,8 @@ export default {
   },
   methods: {
     async handleSubmit(){
-      const response = await axios.post('http://127.0.0.1:8000/api/create_post', {
-        id: localStorage.getItem('id'),
+      const response = await axios.post('http://127.0.0.1:8080/api/create_post', {
+        userId: localStorage.getItem('id'),
         tytul: this.tytul,
         opis: this.opis,
         cena: this.cena,

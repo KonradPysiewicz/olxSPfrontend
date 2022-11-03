@@ -92,7 +92,7 @@ export default {
   },
   name: "EditOffer",
   async created(){
-    axios.get('http://127.0.0.1:8000/api/post/' + localStorage.getItem('post_id'))
+    axios.get('http://127.0.0.1:8080/api/post/' + localStorage.getItem('post_id'))
         .then( response => {
           this.post = response.data
         })
@@ -102,9 +102,9 @@ export default {
   },
   methods: {
     async handleSubmit(){
-      console.log(this.post.tytul, this.post.opis, this.post.lokalizacja)
-      const response = await axios.put('http://127.0.0.1:8000/api/edit_post', {
+      const response = await axios.post('http://127.0.0.1:8080/api/edit_post', {
         id: localStorage.getItem('post_id'),
+        userId: localStorage.getItem('id'),
         tytul: this.post.tytul,
         opis: this.post.opis,
         cena: this.post.cena,

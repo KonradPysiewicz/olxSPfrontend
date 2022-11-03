@@ -30,7 +30,7 @@ export default {
     }
   },
   async created(){
-    axios.get('http://127.0.0.1:8000/api/post/' + localStorage.getItem('post_id_show'))
+    axios.get('http://127.0.0.1:8080/api/post/' + localStorage.getItem('post_id_show'))
         .then( response => {
           this.post = response.data
         })

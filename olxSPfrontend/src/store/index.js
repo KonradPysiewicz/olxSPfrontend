@@ -18,16 +18,23 @@ const store = createStore({
       setToken(commit, token){
           commit('SETTOKEN',token)
       },
-        async handleSubmit({commit}, {email, password}) {
+        async handleSubmit({commit}, {username, password}) {
             try {
-                const response = await axios.post('http://127.0.0.1:8000/api/login', {
-                    email: email,
+                const response = await axios.post('http://127.0.0.1:8080/api/login', {
+                    username: username,
                     password: password
                 })
-                localStorage.setItem('token', response.data.token);
-                commit('SETTOKEN', response.data.token)
+                localStorage.setItem('token', 'token');
+                commit('SETTOKEN', 'token')
 
-                localStorage.setItem('id', response.data.tokeninfo.tokenable_id);
+                axios.get('http://127.0.0.1:8080/api/getUserByUsername/' + username)
+                    .then( response2 => {
+                        localStorage.setItem('id', response2.data);
+                    })
+                    .catch( error => {
+                        console.log(error)
+                    })
+
                 router.push('/');
             } catch (e){
                 alert("Wprowadzono nieprawidłowe dane")

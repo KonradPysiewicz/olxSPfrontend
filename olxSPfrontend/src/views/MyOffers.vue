@@ -35,7 +35,7 @@ export default {
     }
   },
     async created(){
-     axios.get('http://127.0.0.1:8000/api/user_posts/' + localStorage.getItem('id'))
+     axios.get('http://127.0.0.1:8080/api/user_posts/' + localStorage.getItem('id'))
       .then( response => {
         this.posts = response.data
       })
@@ -45,7 +45,7 @@ export default {
     },
     methods:{
       removeItem(id){
-        axios.delete('http://127.0.0.1:8000/api/delete_post/' + id)
+        axios.delete('http://127.0.0.1:8080/api/delete_post/' + id)
         .then( response => {
           if (response.status == 200){
             console.log("Pomyślnie usunieto post")
